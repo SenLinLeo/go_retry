@@ -10,4 +10,4 @@ go语言重试函数
 		MaxRetries:  3,
 		InitialWait: 4 * time.Second,
 		MaxWait:     8 * time.Second,
-	})```
+	})
