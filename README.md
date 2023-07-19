@@ -1,13 +1,10 @@
 # go_retry
 go语言重试函数
 - 指数级重试函数(返回error重试)
+  使用案例，欢迎交流
   ```
-  ExponentialBackoffRetry(func() error {
-		count++
-		t.Logf("time: [%v] count: [%d]", time.Now(), count)
-		if count < 3 {
-			return errors.New("retry")
-		}
+  	ExponentialBackoffRetry(func() error {
+		fmt.Println("ExponentialBackoffRetry")
 		return nil
 	}, RetryOptions{
 		MaxRetries:  3,
